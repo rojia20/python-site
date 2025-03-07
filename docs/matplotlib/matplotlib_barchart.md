@@ -10,13 +10,13 @@ from matplotlib import font_manager
 ```
 
 ## Define Font for Chinese Charaters 
-### For macOS
+- For macOS
 ```
 my_font = font_manager.FontProperties(size = 12, fname = "/System/Library/Fonts/Hiragino Sans GB.ttc")
 ```
 ## Case One
 ### Background
-假设现在有2017年内地电影票房前20的电影(列表a)和电影票房数据(列表b)
+- 假设现在有2017年内地电影票房前20的电影(列表a)和电影票房数据(列表b)
 
 ```
 a = 
@@ -30,20 +30,20 @@ b = [56.01,26.94,17.53,16.49,15.45,12.96,11.8,11.61,11.28,11.12,10.49,10.3,8.75,
 ```
 - *电影票房数据的单位：亿* 
 
-#### Modify dataset a
+#### Modify dataset
+- 用 ```\n``` 来换行
 ```
 a = 
 ["战狼2","速度与激情8","功夫瑜伽","西游伏妖篇","变形金刚5：\n最后的骑士","摔跤吧！爸爸",
      "加勒比海盗5：\n死无对证","金刚：\n骷髅岛","极限特工：\n终极回归","生化危机6：\n终章","乘风破浪","神偷奶爸3",
      "智取威虎山","大闹天竺","金刚狼3：\n殊死一战","蜘蛛侠：\n英雄归来","悟空传","银河护卫队2","情圣","新木乃伊"]
 ```
-- *code: \n --> 用来换行*
 
 ### Question
-如何更加直观的展示该数据？
+- 如何更加直观的展示该数据？
 
 ### Solution
-Categorical data, so using bar chat
+- Categorical data --> using bar chat
 
 ```
 # Step 1: set the figure size 
@@ -73,7 +73,7 @@ plt.show()
 
 
 ### Alternative Solution
-Draw a horizontal bar chat 
+- Draw a horizontal bar chat 
 
 ```
 # Step 1: set the figure size 
@@ -105,7 +105,7 @@ plt.show()
 
 ## Case Two
 ### Background 
-四部电影分别在2017-09-14到2017-09-16三天的票房
+- 四部电影分别在2017-09-14到2017-09-16三天的票房
 ```
 a = ["猩球崛起3：终极之战","敦刻尔克","蜘蛛侠：英雄归来","战狼2"]
 ```
@@ -116,7 +116,7 @@ b_14 = [2358,399,2358,362]
 ```
 
 ### Question
-请展现每部电影的票房，同时与其他几部电影的数据进行对比
+- 请展现每部电影的票房，同时与其他几部电影的数据进行对比
 
 ### Solution
 ```

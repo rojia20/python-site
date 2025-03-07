@@ -5,61 +5,66 @@
 import numpy as np
 ```
 
-## 统计方法
+## Statistical Functions
 - without asigning axis, opertaions will be on the entire array (all values in the array regardless its dimension)
 
-### Sum
+### 1. Sum
 ```
+方法1；
+
 np.sum(t)
 ```
 ```
-# an alternative way
+方法2:
+
 t.sum 
 
-# t is the name of an array
+# t is an array
 ```
-- #### Demo
+#### Demo
 ```
-# create an array
+create an array：
+
 t1 = np.arange(24).reshape(4, 6)
 t4 = t1.astype(float)
-print(t4)
 ```
 ```
-print(t4.sum(axis = 0))
+求每一列的和 (column total):
+
+t4.sum(axis = 0)
 ```
 
-### Mean
+### 2. Mean
 ```
-print(t4.mean(axis = 0))
-```
-
-### Median
-```
-print(np.median(t4, axis = 0))
+t4.mean(axis = 0)
 ```
 
-### Max
+### 3. Median
 ```
-print(t4.max(axis = 0))
-```
-
-### Min
-```
-print(t4.min(axis = 0))
+np.median(t4, axis = 0)
 ```
 
-### Range: Max - Min
+### 4. Max
 ```
-print(np.ptp(t4, axis = 0))
+t4.max(axis = 0)
+```
+
+### 5. Min
+```
+t4.min(axis = 0)
+```
+
+### 6. Range: Max - Min
+```
+np.ptp(t4, axis = 0)
 
 # ptp: peak-to-peak
 ```
 
-### Standard Deviation
+### 7. Standard Deviation
 - Describe the distribution/dispersion of sample mean
 ```
-print(t4.std(axis = 0))
+t4.std(axis = 0)
 ```
 
 
