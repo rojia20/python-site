@@ -14,9 +14,13 @@ nav:
     - Scatter Plot: matplotlib/matplotlib_scatter.md
   - Numpy: 
     - Read Data: numpy/numpy_readdata.md
+    - Array: numpy/numpy_array.md
     - Handling NaN: numpy/numpy_nan.md
+    - Handling Missing Data (NaN): 
     - Infinity: numpy/numpy_infinity.md
-    - Statistic Features: numpy/numpy_stats.md
+    - Statistic Functions: numpy/numpy_stats.md
+    - Exchange Rows/Columns: numpy/numpy_exchange.md
+    - Other Functions: numpy/numpy_other_func.md
   
 # [UI]s
 # [top]
