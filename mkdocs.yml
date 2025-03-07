@@ -1,4 +1,5 @@
 # [Info]
+# 左上角标题
 site_name: My Python Journey
 site_url: https://rojia20.github.io/python-site/
 site_author: Rongqing "Riva" Jia
@@ -7,18 +8,17 @@ site_description: A Journey How I Mastered Python for Data Analysis
 # [Navigtion]
 nav:
   - Matplotlib:
-    - Line Chart: markdown/matplotlib/matplotlib_linechart.md
-    - Bar Chat: markdown/matplotlib/matplotlib_barchart.md
-    - Histogram: markdown/matplotlib/matplotlib_histogram.md
-    - Scatter Plot: markdown /matplotlib/matplotlib_scatter.md
+    - Line Chart: matplotlib/matplotlib_linechart.md
+    - Bar Chat: matplotlib/matplotlib_barchart.md
+    - Histogram: matplotlib/matplotlib_histogram.md
+    - Scatter Plot: matplotlib/matplotlib_scatter.md
   - Numpy: 
-    - Read Data: markdown/numpy/numpy_infinity.md
-    - Handling NaN: markdown/numpy/numpy_nan.md
-    - Infinity: markdown/numpy/numpy_infinity.md
-    - Statistic Features: markdown/numpy/numpy_stats.md
+    - Read Data: numpy/numpy_readdata.md
+    - Handling NaN: numpy/numpy_nan.md
+    - Infinity: numpy/numpy_infinity.md
+    - Statistic Features: numpy/numpy_stats.md
   
-
-  # [UI]
+# [UI]s
 # [top]
 theme:
   name: material
@@ -70,9 +70,7 @@ theme:
     # [点击按钮跳转至 GitHub 修改 Markdown 源文件]
     # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
     - content.action.edit
-
-language: en # 一些提示性的文字会变成中文
-
+  language: en # 一些提示性的文字会变成中文
   icon:
     # [添加 GitHub 仓库]
     # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#repository-icon
