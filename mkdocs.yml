@@ -1,1 +1,20 @@
-site_name: My Docs
+# [Info]
+site_name: My Python Journey
+site_url: https://rojia20.github.io/python-site/
+site_author: Rongqing "Riva" Jia
+site_description: A Journey How I Mastered Python for Data Analysis
+
+# [Navigtion]
+nav:
+  - Matplotlib:
+    - Line Chart: markdown/matplotlib/matplotlib_linechart.md
+    - Bar Chat: markdown/matplotlib/matplotlib_barchart.md
+    - Histogram: markdown/matplotlib/matplotlib_histogram.md
+    - Scatter Plot: markdown /matplotlib/matplotlib_scatter.md
+  - Numpy: 
+    - Read Data: markdown/numpy/numpy_infinity.md
+    - Handling NaN: markdown/numpy/numpy_nan.md
+    - Infinity: markdown/numpy/numpy_infinity.md
+    - Statistic Features: markdown/numpy/numpy_stats.md
+  - Pandas: 
+   
