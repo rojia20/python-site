@@ -16,7 +16,7 @@ nav:
     - Read Data: numpy/numpy_readdata.md
     - Array: numpy/numpy_array.md
     - Handling NaN: numpy/numpy_nan.md
-    - Handling Missing Data (NaN): 
+    - Handling Missing Data (NaN): numpy/numpy_missdata.md
     - Infinity: numpy/numpy_infinity.md
     - Statistic Functions: numpy/numpy_stats.md
     - Exchange Rows/Columns: numpy/numpy_exchange.md
