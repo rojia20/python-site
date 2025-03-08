@@ -169,7 +169,7 @@ t1[t1 <= 10] = 3
     - *t1[t1 <= 10] = 3 --> 将 t1 matrix 中 True 的位置统统替换为 3*
 
 #### 4.2.2 Replace t1 < 10 with 0 and t1 > 10 with 10 
-    - 一个临界点
+- 一个临界点
 ```
 np.where(t1 < 10, 0, 10)
 ```
@@ -177,7 +177,7 @@ np.where(t1 < 10, 0, 10)
     - *if t1 < 10, then t1 = 0, otherwise t1 = 10*
 
 #### 4.2.3 Replace t1 < 10 with 10 and t1 > 18 with 18 
-    - 两个临界点
+- 两个临界点
 ```
 用 clip 裁剪:
 
@@ -185,7 +185,7 @@ t1.clip(10, 18)
 ```
 
 ### 5. 赋值 NaN 
-    - data must be float before converting to NaN
+- data must be float before converting to NaN
 ```
 赋值 data point (3, 3) with NaN:
 
@@ -199,4 +199,4 @@ t4[3, 3] = np.nan
 - Example:
 ```
 print("*"*100)
-````
+```
