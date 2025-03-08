@@ -1,19 +1,19 @@
 # Numpy - Handling Missing Data (NaN)
 
 ## Import Modules
-```
+```python
 import numpy as np
 ```
 ## Data Source
-```
+```python
 t1 = np.arange(12).reshape(3, 4).astype(float)
 t1[1, 2:] = np.nan 
 ```
 
 ## Case One: calculating the average 
 - Without asigning axis, opertaions will be on the entire array (all values in the array regardless its dimension)
-```
-Define a function that calculate column mean:
+```python
+# Define a function that calculate column mean:
 
 def fill_ndarray(t1): # define a function that calculate column mean
     for i in range (t1.shape[1]): # read through each column
@@ -24,8 +24,8 @@ def fill_ndarray(t1): # define a function that calculate column mean
             temp_col[temp_col != temp_col] = temp_nonan_col.mean() # replace the current nan with the average 
     return t1
 ```
-```
-Call out the self-defined function to fill the NaN with column mean: 
+```python
+# Call out the self-defined function to fill the NaN with column mean: 
 
 if __name__ == '__main__': # only run following code in this local file, not when importing self-define function in other file
     t1 = np.arange(12).reshape(3, 4).astype(float)

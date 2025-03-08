@@ -1,7 +1,7 @@
 # Numpy - Practice
 
 ## Import Modules
-```
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
@@ -11,13 +11,13 @@ import matplotlib.ticker as ticker
 
 ## Define Font for Chinese Charaters 
 - For macOS
-```
+```python
 my_font = font_manager.FontProperties(size = 12, fname = "/System/Library/Fonts/Hiragino Sans GB.ttc")
 ```
 
 ## Data Source
-```
-Read in CSV file: 
+```python
+# Read in CSV file: 
 
 us_file_path = "./data/us_videos.csv"
 
@@ -38,8 +38,8 @@ uk = np.loadtxt(uk_file_path, delimiter = ",", dtype = "int", skiprows = 1)
 ### Solution
 - Number of comments is numerical --> use histogram 
 
-```
-Step 1: prepare data
+```python
+# Step 1: prepare data
 
 # only take out the column "comment_count" --> the last column, -1 
 
@@ -49,8 +49,8 @@ us_comments = us[:, -1]
 
 us_comments = us_comments[us_comments <= 5000] 
 ```
-```
-Step 2: plot figure
+```python
+# Step 2: plot figure
 
 # Set the figure size
 plt.figure(figsize = (20, 10), dpi = 80)
@@ -90,14 +90,14 @@ plt.show()
 
 ### Solution
 - Looking for relationship between two variables --> use scatter plot
-```
-Step 1: Prepare data
+```python
+# Step 1: Prepare data
 
 # Only take out the "likes" and "comment_count" columns
 uk_likes = uk[:, 1]
 uk_comments = uk[:, 3]
 
-Step 2: Plot graph
+# Step 2: Plot graph
 
 # Set the figure size
 plt.figure(figsize = (20, 8), dpi = 80)

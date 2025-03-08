@@ -1,7 +1,7 @@
 # Numpy - Join and divide array
 
 ## Import Modules
-```
+```python
 import numpy as np
 
 # import the self-defined function for formating x and y-axis from another python file named "test2_xy_formatter"
@@ -15,18 +15,18 @@ import matplotlib.ticker as ticker
 
 ## Define Font for Chinese Charaters 
 - For macOS
-```
+```python
 my_font = font_manager.FontProperties(size = 12, fname = "/System/Library/Fonts/Hiragino Sans GB.ttc")
 ```
 
 ## Data Source
 - Create two arrays with same shape
-```
+```python
 t1 = np.arange(12).reshape(2, 6)
 
 t2 = np.arange(12,24).reshape(2, 6)
 ```
-```
+```python
 # read in CSV file 
 us_file_path = "./data/us_videos.csv"
 uk_file_path = "./data/gb_videos.csv"
@@ -40,8 +40,8 @@ np.set_printoptions(suppress=True)
 
 ## Functions: 
 ### 1. Joint two arrays vertically 
-```
-Adding rows to t1:
+```python
+# Adding rows to t1:
 
 np.vstack((t1, t2)) 
 
@@ -49,8 +49,8 @@ np.vstack((t1, t2))
 ```
 
 ### 2. Joint two arrays horizontally 
-```
-Adding columns to t1
+```python
+# Adding columns to t1
 
 np.hstack((t1, t2))
 
@@ -58,8 +58,8 @@ np.hstack((t1, t2))
 ```
 
 ### 3. Divide an array vertically 
-```
-Separate rows from t1 -- (与vstack对应):
+```python
+# Separate rows from t1 -- (与vstack对应):
 
 np.vsplit(t1, [1])
 
@@ -67,8 +67,8 @@ np.vsplit(t1, [1])
 ```
 
 ### 4. Divide an array horizontally 
-```
-Separate columns from t1 -- (与hstack对应):
+```python
+# Separate columns from t1 -- (与hstack对应):
 
 np.hsplit(t2, [2])
 
@@ -76,15 +76,15 @@ np.hsplit(t2, [2])
 ```
 
 ### 5. Split an array into equal parts or at specific positions
-```
+```python
 np.split()
 ```
 ### 6. Split an array as equally as possible
-```
+```python
 np.array_split()
 ```
 ### 7. Split an 3D array along the depth
-```
+```python
 np.dsplit()
 ```
 
@@ -102,20 +102,20 @@ np.dsplit()
 #### Part 1: combine us and uk data and indicate the source of data: us or uk
 - Add an additional column to each array (us and uk) to indicate the source of data: us or uk
 - us == 0, uk == 1
-```
-Step 1: creat a column with all zeros (for US), and create a column with all ones (for UK)
+```python
+# Step 1: creat a column with all zeros (for US), and create a column with all ones (for UK)
 
 # define the shape of this column --> num of rows: us.shape[0], num of cols: 1 
 
 us_zeros = np.zeros((us.shape[0], 1)) 
 uk_ones = np.ones((uk.shape[0], 1))
 
-Step 2: add the zero-column and one-column to us and uk (array), respectively 
+# Step 2: add the zero-column and one-column to us and uk (array), respectively 
 
 us_m = np.hstack((us, us_zeros))
 uk_m = np.hstack((uk, uk_ones))
 
-Step 3: combine the two new arrays 
+# Step 3: combine the two new arrays 
 
 us_uk = np.vstack((us_m, uk_m))
 ```
@@ -124,8 +124,8 @@ us_uk = np.vstack((us_m, uk_m))
 ```uk_ones = np.ones((uk.shape[0], 1)).astype(int)```
 
 #### Part 2: generate figure
-```
-Step 1: define a function to distinguish us and uk data points by colors
+```python
+# Step 1: define a function to distinguish us and uk data points by colors
 
 def fill_colors(country):
     colors = []
@@ -136,7 +136,7 @@ def fill_colors(country):
             colors.append("#5F9EA0")
     return colors
 
-Step 2: define a function to label us and uk data points
+# Step 2: define a function to label us and uk data points
 
 def fill_labels(country):
     labels = []
@@ -153,7 +153,7 @@ if __name__ == '__main__':
 
 # Below are the local-only code
 
-    Step 3: plot data
+# Step 3: plot data
     
     # call the self-defined function to fill colors
     country = us_uk[:, 4]

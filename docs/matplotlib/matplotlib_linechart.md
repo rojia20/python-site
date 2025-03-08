@@ -1,7 +1,7 @@
 # Line Chat 
 
 ## Import Modules
-```
+```python
 import matplotlib.pyplot as plt
 import random
 import matplotlib
@@ -10,21 +10,21 @@ from matplotlib import font_manager
 
 ## Define Font for Chinese Charaters 
 - For macOS
-```
+```python
 my_font = font_manager.FontProperties(size = 12, fname = "/System/Library/Fonts/Hiragino Sans GB.ttc")
 ```
 
 ## Demo
 ### Background
-```
+```python
 x = range(2, 26, 2)
 ```
-```
+```python
 y = [15, 13, 14.5, 17, 20, 25, 26, 26, 24, 22, 18, 15]
 ```
 
 ### Solution
-```
+```python
 # set the size of graph
 plt.figure(figsize = (20, 8), dpi = 80) #width, hight
 
@@ -56,10 +56,10 @@ plt.show()
 ### Background
 - 10点到12点每分钟的气温变化情况如下:
 
-```
+```python
 x = range(0, 120)
 ```
-```
+```python
 y = [random.randint(20, 35) for i in range(120)]
 ```
 
@@ -68,7 +68,7 @@ y = [random.randint(20, 35) for i in range(120)]
 
 ### Solution
 - Since we are looking for trend and the data is numercial, we are going to use line chat
-```
+```python
 # Step 1: set the figure size 
 plt.figure(figsize = (20, 8), dpi = 80)
 
@@ -98,10 +98,10 @@ plt.show()
 ## Case Two
 ### Background 
 - 假设某人11岁到30岁的交往记录如下:
-```
+```python
 x = range(11, 31)
 ```
-```
+```python
 y = [1, 0, 1, 1, 2, 4, 3, 2, 3, 4, 4, 5, 6, 5, 4, 3, 3, 1, 1, 1]
 ```
 
@@ -109,7 +109,7 @@ y = [1, 0, 1, 1, 2, 4, 3, 2, 3, 4, 4, 5, 6, 5, 4, 3, 3, 1, 1, 1]
 - 请使用图表展现此人11岁到30岁的交往记录
 
 ### Solution
-```
+```python
 # Step 1: set the figure size 
 plt.figure(figsize = (20, 8), dpi = 80)
 
@@ -140,13 +140,13 @@ plt.show()
 ### Background 
 - 假设某人和其朋友11岁到30岁的交往记录如下:
 
-```
+```python
 x = range(11, 31)
 ```
-```
+```python
 y = [1, 0, 1, 1, 2, 4, 3, 2, 3, 4, 4, 5, 6, 5, 4, 3, 3, 1, 1, 1]
 ```
-```
+```python
 z = [1, 0, 3, 1, 2, 2, 3, 3, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
 
@@ -154,7 +154,7 @@ z = [1, 0, 3, 1, 2, 2, 3, 3, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 - 请使用图表展现此人和其朋友11岁到30岁的交往记录
 
 ### Solution
-```
+```python
 # Step 1: set the figure size 
 plt.figure(figsize = (20, 8), dpi = 80)
 

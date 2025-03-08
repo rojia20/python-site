@@ -1,7 +1,7 @@
 # Histogram
 
 ## Import Modules
-```
+```python
 import matplotlib.pyplot as plt
 import random
 import matplotlib
@@ -10,14 +10,14 @@ from matplotlib import font_manager
 
 ## Define Font for Chinese Charaters 
 - For macOS
-```
+```python
 my_font = font_manager.FontProperties(size = 12, fname = "/System/Library/Fonts/Hiragino Sans GB.ttc")
 ```
 ## Case One
 ### Background
 - 现有250部电影的时长(列表a)
 
-```
+```python
 a = 
 [131,  98, 125, 131, 124, 139, 131, 117, 128, 108, 135, 138, 131, 102, 107, 114, 119, 128, 
    121, 142, 127, 130, 124, 101, 110, 116, 117, 110, 128, 128, 115,  99, 136, 126, 134,  95, 
@@ -40,7 +40,7 @@ a =
 ### Solution
 - Numerical data --> using histogram
 
-```
+```python
 # Step 1: set the figure size 
 plt.figure(figsize = (20, 10), dpi = 80)
 
@@ -72,7 +72,7 @@ plt.show()
 ## Case Two
 ### Background 
 - 美国2004年人口普查发现有124 million的人在离家相对较远的地方工作。根据他们从家到上班地点所需要的时间,通过抽样统计(最后一列)出了下表的数据
-```
+```python
 interval = [0,5,10,15,20,25,30,35,40,45,60,90]
 int_width = [5,5,5,5,5,5,5,5,5,15,30,60]
 quantity = [836,2737,3723,3926,3596,1438,3273,642,824,613,215,47]
@@ -85,7 +85,7 @@ quantity = [836,2737,3723,3926,3596,1438,3273,642,824,613,215,47]
 ### Solution
 - 绘制条形图，并让每条bar都并在一起，达到histogram的效果 
 - *bar chat has a default width of 0.8*
-```
+```python
 x = interval 
 y = quantity 
 

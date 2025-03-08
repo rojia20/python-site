@@ -2,16 +2,16 @@
 # Pandas - Handling NaN
 
 ## Import Modules
-```
+```python
 import pandas as pd 
 ```
 
 ## Data Source
-```
+```python
 df1 = pd.DataFrame(np.arange(12).reshape(3, 4), index = list("abc"), columns = list("wxyz"))
 df1["w"][1] = np.nan #[column][row]
 ```
-```
+```python
 df2 = pd.DataFrame(np.arange(12).reshape(3, 4), index = list("abc"), columns = list("wxyz"))
 df2.iloc[1:, :2] = np.nan
 ```
@@ -20,18 +20,18 @@ df2.iloc[1:, :2] = np.nan
 - 0 可能是缺失值，可能是真实值 --> 需按实际情况判断
 
 ### 1. Detect Whether There is NaN
-```
+```python
 pd.isnull(df1) # 判断是NaN
 
 pd.notnull(df1) # 判断不是NaN
 ```
 ### 2. Manipulate NaN 
 #### 方法1: Delete NaN
-```     
+```python
 df_w = df1[pd.notnull(df1["w"])]  # 选中column w 中不是NaN的那一行
 
 print(df_w)   # output:      w    x  y  z
-                        a  0.0  1.0  2  3
+                       # a  0.0  1.0  2  3
 
 df1.dropna(axis = 0) # delete all rows with nan
 
@@ -45,7 +45,7 @@ df1.dropna(axis = 0, inplace = True) # inplace = True --> 对当前dataframe原�
 ```
 
 #### 方法2: Refill data
-```
+```python
 df2.fillna(0,inplace = True) # replace NaN with 0 
 
 df2.fillna(df2.mean(), inplace = True) # replace NaN with mean (column mean)
@@ -55,7 +55,7 @@ df2["w"].fillna(df2["w"].mean(), inplace = True) # operate only on column w and 
 df2["w"] = df2["w"].fillna(df2["w"].mean()) # althernative way to write the above commend
 
 # df2["w"].mean() --> unlike numpy, the mean of a column with NaN is not NaN. 
-                  --> Instead, it is the column mean of the sum of the rest of data point in the column 
+                  # --> Instead, it is the column mean of the sum of the rest of data point in the column 
 ```
 - 注释：`df2["w"][1] = np.nan`的alternative: 
 1. `df2["w"]["b"] = np.nan` --> 通用格式: [column][row]

@@ -1,7 +1,7 @@
 # Bar Chat 
 
 ## Import Modules
-```
+```python
 import pyplot
 import matplotlib.pyplot as plt
 import random
@@ -11,20 +11,20 @@ from matplotlib import font_manager
 
 ## Define Font for Chinese Charaters 
 - For macOS
-```
+```python
 my_font = font_manager.FontProperties(size = 12, fname = "/System/Library/Fonts/Hiragino Sans GB.ttc")
 ```
 ## Case One
 ### Background
 - 假设现在有2017年内地电影票房前20的电影(列表a)和电影票房数据(列表b)
 
-```
+```python
 a = 
 ["战狼2","速度与激情8","功夫瑜伽","西游伏妖篇","变形金刚5：最后的骑士","摔跤吧！爸爸",
      "加勒比海盗5：死无对证","金刚：骷髅岛","极限特工：终极回归","生化危机6：终章","乘风破浪","神偷奶爸3",
      "智取威虎山","大闹天竺","金刚狼3：殊死一战","蜘蛛侠：英雄归来","悟空传","银河护卫队2","情圣","新木乃伊"]
 ```
-```
+```python
 b = [56.01,26.94,17.53,16.49,15.45,12.96,11.8,11.61,11.28,11.12,10.49,10.3,8.75,
    7.55,7.32,6.99,6.88,6.86,6.58,6.23]
 ```
@@ -32,7 +32,7 @@ b = [56.01,26.94,17.53,16.49,15.45,12.96,11.8,11.61,11.28,11.12,10.49,10.3,8.75,
 
 #### Modify dataset
 - 用 ```\n``` 来换行
-```
+```python
 a = 
 ["战狼2","速度与激情8","功夫瑜伽","西游伏妖篇","变形金刚5：\n最后的骑士","摔跤吧！爸爸",
      "加勒比海盗5：\n死无对证","金刚：\n骷髅岛","极限特工：\n终极回归","生化危机6：\n终章","乘风破浪","神偷奶爸3",
@@ -45,7 +45,7 @@ a =
 ### Solution
 - Categorical data --> using bar chat
 
-```
+```python
 # Step 1: set the figure size 
 plt.figure(figsize = (20, 20), dpi = 80)
 
@@ -75,7 +75,7 @@ plt.show()
 ### Alternative Solution
 - Draw a horizontal bar chat 
 
-```
+```python
 # Step 1: set the figure size 
 plt.figure(figsize = (20, 10), dpi = 80)
 
@@ -106,10 +106,10 @@ plt.show()
 ## Case Two
 ### Background 
 - 四部电影分别在2017-09-14到2017-09-16三天的票房
-```
+```python
 a = ["猩球崛起3：终极之战","敦刻尔克","蜘蛛侠：英雄归来","战狼2"]
 ```
-```
+```python
 b_16 = [15746,312,4497,319]
 b_15 = [12357,156,2045,168]
 b_14 = [2358,399,2358,362]
@@ -119,12 +119,12 @@ b_14 = [2358,399,2358,362]
 - 请展现每部电影的票房，同时与其他几部电影的数据进行对比
 
 ### Solution
-```
+```python
 # Step 1: set the figure size 
 plt.figure(figsize = (20, 8), dpi = 80)
 
 # Step 2: determine number of movies in the dataset a
---> equals to number of bars needed for 9月14日
+# --> equals to number of bars needed for 9月14日
 x_14 = list(range(len(a)))
 
 # Step 3: to avoid the overlapping of each bar
