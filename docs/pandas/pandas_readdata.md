@@ -11,7 +11,7 @@ import string
 ```
 
 ## Data Source
-- ### Read CSV file 
+- Read CSV file 
 ```
 df = pd.read_csv("/Users/jrq/Desktop/learnpy/data/dognames.csv")
 

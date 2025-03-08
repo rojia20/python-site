@@ -16,7 +16,7 @@ import numpy as np
 ```
 
 ## Data Source
-- ### Read CSV file 
+- Read CSV file 
 ```
 us_file_path = "./data/us_videos.csv"
 
@@ -27,7 +27,7 @@ us = np.loadtxt(us_file_path, delimiter = ",", dtype = "int", skiprows = 1)
 
 uk = np.loadtxt(uk_file_path, delimiter = ",", dtype = "int", skiprows = 1)
 ```
-- ### 自建数组
+- 自建数组
 ```
 t1 = np.arange(24).reshape(4, 6)
 print(t1)
@@ -165,7 +165,7 @@ us[1,1:4] = 0
 t1[t1 <= 10] = 3
 ```
  - *原理:*  
-    - *t1 < 10 gives an output that has a dtype = bool （True or False）*
+    - *t1 < 10 gives an output that has a dtype = bool （True or False*
     - *t1[t1 <= 10] = 3 --> 将 t1 matrix 中 True 的位置统统替换为 3*
 
 #### 4.2.2 Replace t1 < 10 with 0 and t1 > 10 with 10 
