@@ -78,9 +78,9 @@ theme:
     # 可以通过按钮复制代码
     # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-copy-button
     - content.code.copy
-    # [点击按钮跳转至 GitHub 修改 Markdown 源文件]
-    # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
-    - content.action.edit
+    # # [点击按钮跳转至 GitHub 修改 Markdown 源文件]
+    # # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
+    # - content.action.edit
   language: en # 一些提示性的文字会变成英文
   icon:
     # [添加 GitHub 仓库]
