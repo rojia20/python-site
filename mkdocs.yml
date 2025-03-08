@@ -23,6 +23,8 @@ nav:
     - Other Functions: numpy/numpy_other_func.md
     - Join and Divide: numpy/numpy_join_divide.md
     - More Practice: numpy/numpy_practice.md
+  - Pandas:
+    - Read Data: pandas/pandas_readdata.md
    
 
   
