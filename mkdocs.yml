@@ -21,6 +21,10 @@ nav:
     - Statistic Functions: numpy/numpy_stats.md
     - Exchange Rows/Columns: numpy/numpy_exchange.md
     - Other Functions: numpy/numpy_other_func.md
+    - Join and Divide: numpy/numpy_join_divide.md
+    - More Practice: numpy/numpy_practice.md
+   
+
   
 # [UI]s
 # [top]
