@@ -43,10 +43,10 @@ df2.join(df1)
 ### 2. Merge
 - Merge特点： 按照列索引 （column index）
 - 四种merge：
-1. Merge默认：求两个df的交集 （inner） --> df1.merge(df3, on = "a", how = "inner")
-2. Merge outer：求并集， NaN补全 --> df1.merge(df3, on = "a", how = "outer")
-3. Merge left： 左边df为准，NaN补全 --> df1.merge(df3, on = "a", how = "left")
-4. Merge right：右边df为准， NaN补全 --> df1.merge(df3, on = "a", how = "right")
+1. Merge默认：求两个df的交集 （inner） --> `df1.merge(df3, on = "a", how = "inner")`
+2. Merge outer：求并集， NaN补全 --> `df1.merge(df3, on = "a", how = "outer")`
+3. Merge left： 左边df为准，NaN补全 --> `df1.merge(df3, on = "a", how = "left")`
+4. Merge right：右边df为准， NaN补全 --> `df1.merge(df3, on = "a", how = "right")`
 
 ```python
 df1.merge(df3, on = "a") 

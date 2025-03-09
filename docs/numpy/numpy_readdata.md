@@ -4,11 +4,11 @@
 - 读取数据一般不用numpy，而是pandas
     - pandas更强大
 - Data file的格式通常是CSV file (Comma-Separated Value)
-    - 基本语法：np.loadtxt(fname, dtype = np.float, delimiter = None, skiprows = 0, usecols = None, unpack = False)
-    - delimiter --> 分隔字符串: 默认为空格，可改为逗号
-    - skiprows --> 跳过前X行
-    - usecols --> 读取指定的列
-    - unpack --> 转制: 将行转成列，将列转成行。 默认 unpack = False
+    - 基本语法：`np.loadtxt(fname, dtype = np.float, delimiter = None, skiprows = 0, usecols = None, unpack = False)`
+    - `delimiter` --> 分隔字符串: 默认为空格，可改为逗号
+    - `skiprows` --> 跳过前X行
+    - `usecols` --> 读取指定的列
+    - `unpack` --> 转制: 将行转成列，将列转成行。 默认 unpack = False
 
 ## Import Modules
 ```python
@@ -45,7 +45,7 @@ t1.T
 ```
 
 ### 2. Extract row and/or columns
-- 基本语法：data[rows, columns]
+- 基本语法：`data[rows, columns]`
 
 #### 2.1 Extract one row
 ```python
@@ -126,7 +126,7 @@ us[[0, 2], [0, 1]]
 ```
 
 ### 3. 取步长
-- 例：[:2]
+- 例：`[:2]`
 
 ```python
 # 每两列一取值：
@@ -163,8 +163,8 @@ t1[t1 <= 10] = 3
 ```
 
  - *原理:*  
-    - *t1 < 10 gives an output that has a dtype = bool (True or False)*                  
-    - *t1[t1 <= 10] = 3 --> 将 t1 matrix 中 True 的位置统统替换为 3*      
+    - *`t1 < 10` gives an output that has a dtype = bool (True or False)*                  
+    - *`t1[t1 <= 10] = 3` --> 将 t1 matrix 中 True 的位置统统替换为 3*      
 
 #### 4.2.2 Replace t1 < 10 with 0 and t1 > 10 with 10 
 - 一个临界点

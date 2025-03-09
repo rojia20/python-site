@@ -9,8 +9,8 @@
     4. inappropriate calculation
         - eg. (infinity - infinity)
 - np.nan 与 np.nan 不相等
-    - np.nan == np.nan --> output: False
-    - np.nan != np.nan --> output: True
+    - `np.nan == np.nan` --> output: False
+    - `np.nan != np.nan` --> output: True
 
 ## Import Modules
 ```python

@@ -20,8 +20,8 @@ nav:
     - Infinity: numpy/numpy_infinity.md
     - Statistic Functions: numpy/numpy_stats.md
     - Exchange Rows/Columns: numpy/numpy_exchange.md
-    - Other Functions: numpy/numpy_other_func.md
     - Join and Divide: numpy/numpy_join_divide.md
+    - Other Functions: numpy/numpy_other_func.md
     - More Practice: numpy/numpy_practice.md
   - Pandas:
     - Read Data: pandas/pandas_readdata.md

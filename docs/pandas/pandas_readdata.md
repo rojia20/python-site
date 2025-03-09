@@ -158,8 +158,8 @@ df_sort[df_sort["Count_AnimalName"] > 800]
 ```
 
 - When having multiple conditions:                              
-    1. & --> 表示“且”，for having more than one condition concurrently              
-    2. | --> 表示“或”，meeting one condition or the other               
+    1. `&` --> 表示“且”，for having more than one condition concurrently              
+    2. `|` --> 表示“或”，meeting one condition or the other               
 
 ```python
 # Have more than one condition concurrently:
