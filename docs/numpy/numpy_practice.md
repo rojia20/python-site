@@ -1,4 +1,4 @@
-# Numpy - Practice
+# Numpy - More Practice
 
 ## Import Modules
 ```python
@@ -11,6 +11,7 @@ import matplotlib.ticker as ticker
 
 ## Define Font for Chinese Charaters 
 - For macOS
+
 ```python
 my_font = font_manager.FontProperties(size = 12, fname = "/System/Library/Fonts/Hiragino Sans GB.ttc")
 ```
@@ -90,6 +91,7 @@ plt.show()
 
 ### Solution
 - Looking for relationship between two variables --> use scatter plot
+
 ```python
 # Step 1: Prepare data
 

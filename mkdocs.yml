@@ -25,7 +25,17 @@ nav:
     - More Practice: numpy/numpy_practice.md
   - Pandas:
     - Read Data: pandas/pandas_readdata.md
+    - DataFrame: pandas/pandas_dataframe.md
     - Handling NaN: pandas/pandas_nan.md
+    - Index: pandas/pandas_index.md
+    - MultiIndex: pandas/pandas_multiindex.md
+    - Count: pandas/pandas_count_str.md
+    - Join and Merge: pandas/pandas_join_merge.md
+    - Group: pandas/pandas_group.md
+    - Time Series: pandas/pandas_timeseries.md
+    - Practice one: pandas/pandas_practice.md
+    - Practice Two: pandas/pandas_practice2.md
+    - Practice Three: pandas/pandas_practice3.md
    
 
   

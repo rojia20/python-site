@@ -10,6 +10,7 @@ import random
 ### 1. Generate Array
 - ```np.array()```
 - ```np.arange()```
+
 ```python
 # 方法1:
 
@@ -47,6 +48,7 @@ t3.dtype
 
 #### 2.2 Assign data type
 - Why this is important --> 当内存小的时候，可用numpy修改data type从而便于存储
+
 ```python
 Example: 
 
@@ -137,12 +139,14 @@ t16.reshape(24,)
 - ```[0]``` == # of parts
 - ```[1]``` == # of rows
 - ```[2]``` == # of columns
+
 ```python
 t17 = t16.reshape((t16.shape[0] * t16.shape[1] * t16.shape[2]),) 
 ```
 #### 5.6 Reshape an unknown shape/size 2D array to 1D
 - ```[0]``` == # of rows
 - ```[1]``` == # of columns
+
 ```python
 t18 = t16.reshape((t16.shape[0] * t16.shape[1]),) 
 ```
@@ -155,6 +159,7 @@ t16.flatten()
 
 #### 6.1 Array vs. A number
 - Add/suntract/mutiply/divide: operation is on each number in an array --> 广播机制
+
 ```python
 # Example 1: 
 
@@ -170,6 +175,7 @@ t15/0
 ```
 #### 6.2 Array vs. Array (same shape)
 - calculation between arrays with exact same shape: 两个array中对应的数字进行运算
+
 ```python
 t19 = np.arange(100, 124).reshape(4, 6)
 t20 = np.arange(0,24).reshape(4, 6)
@@ -179,6 +185,7 @@ t19 + t20
 ```
 #### 6.3 Array vs. Array (partially different shape)
 - calculation between arrays with partially different shape: 大array与小array的shape相同部分，与小array对应数字进行运算
+
 ```python
 # Example 1: 
 

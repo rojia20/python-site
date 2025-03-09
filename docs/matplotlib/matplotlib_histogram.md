@@ -1,4 +1,4 @@
-# Histogram
+# Matplotlib - Histogram
 
 ## Import Modules
 ```python
@@ -10,6 +10,7 @@ from matplotlib import font_manager
 
 ## Define Font for Chinese Charaters 
 - For macOS
+
 ```python
 my_font = font_manager.FontProperties(size = 12, fname = "/System/Library/Fonts/Hiragino Sans GB.ttc")
 ```
@@ -72,6 +73,7 @@ plt.show()
 ## Case Two
 ### Background 
 - 美国2004年人口普查发现有124 million的人在离家相对较远的地方工作。根据他们从家到上班地点所需要的时间,通过抽样统计(最后一列)出了下表的数据
+
 ```python
 interval = [0,5,10,15,20,25,30,35,40,45,60,90]
 int_width = [5,5,5,5,5,5,5,5,5,15,30,60]
@@ -85,6 +87,7 @@ quantity = [836,2737,3723,3926,3596,1438,3273,642,824,613,215,47]
 ### Solution
 - 绘制条形图，并让每条bar都并在一起，达到histogram的效果 
 - *bar chat has a default width of 0.8*
+
 ```python
 x = interval 
 y = quantity 

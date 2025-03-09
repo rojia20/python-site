@@ -12,6 +12,7 @@ t1[1, 2:] = np.nan
 
 ## Case One: calculating the average 
 - Without asigning axis, opertaions will be on the entire array (all values in the array regardless its dimension)
+
 ```python
 # Define a function that calculate column mean:
 

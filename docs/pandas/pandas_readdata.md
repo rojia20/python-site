@@ -1,4 +1,4 @@
-# Pandas - 读取数据
+# Pandas - Read Data
 
 ## 前言
 - Pandas中大小写matters
@@ -11,7 +11,8 @@ import string
 ```
 
 ## Data Source
-- Read CSV file 
+- Read CSV file
+
 ```python
 df = pd.read_csv("/Users/jrq/Desktop/learnpy/data/dognames.csv")
 
@@ -23,6 +24,7 @@ print(df.head(), df.info())
 ## Functions
 ### 1. Sort/Rank 
 - Practice question: which dog name is the most frequently used?
+
 ```python
 # rank the names based of the name counts 
 df_sort = df.sort_values(by = "Count_AnimalName", ascending = False) # ascending: default is True
@@ -67,7 +69,7 @@ df1["w"]["b"] = np.nan # alternative way
 
 - 为什么 #4 切片是先列后行，而 #3 是先行后列：
 1. DataFrame 的默认索引方式是列优先（`df[column]`），而不是行优先。因为列操作（如选择、计算）更常见。
-    - `df2["w"][1]` 只能先列后行，因为 `df2["w"]` 返回的是 Series，而 Series 是一个一维数据结构，只有索引（行）没有列
+   - `df2["w"][1]` 只能先列后行，因为 `df2["w"]` 返回的是 Series，而 Series 是一个一维数据结构，只有索引（行）没有列
 2. `df_sort[:20]["Row_Labels"]` 可以先行后列，因为 `df_sort[:20]` 返回的是 DataFrame，既有行索引也有列索引。
     - `["Row_Labels"]` 从这个新的 DataFrame 中选择列 "Row_Labels"，返回一个 Series。
 
@@ -157,6 +159,7 @@ df_sort[df_sort["Count_AnimalName"] > 800]
 - When having multiple conditions: 
     1. & --> 表示“且”，for having more than one condition concurrently 
     2. | --> 表示“或”，meeting one condition or the other 
+
 ```python
 # Have more than one condition concurrently:
 

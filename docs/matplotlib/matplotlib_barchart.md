@@ -1,4 +1,4 @@
-# Bar Chat 
+# Matplotlib - Bar Chat 
 
 ## Import Modules
 ```python
@@ -11,6 +11,7 @@ from matplotlib import font_manager
 
 ## Define Font for Chinese Charaters 
 - For macOS
+
 ```python
 my_font = font_manager.FontProperties(size = 12, fname = "/System/Library/Fonts/Hiragino Sans GB.ttc")
 ```
@@ -32,6 +33,7 @@ b = [56.01,26.94,17.53,16.49,15.45,12.96,11.8,11.61,11.28,11.12,10.49,10.3,8.75,
 
 #### Modify dataset
 - 用 ```\n``` 来换行
+
 ```python
 a = 
 ["战狼2","速度与激情8","功夫瑜伽","西游伏妖篇","变形金刚5：\n最后的骑士","摔跤吧！爸爸",
@@ -106,6 +108,7 @@ plt.show()
 ## Case Two
 ### Background 
 - 四部电影分别在2017-09-14到2017-09-16三天的票房
+
 ```python
 a = ["猩球崛起3：终极之战","敦刻尔克","蜘蛛侠：英雄归来","战狼2"]
 ```

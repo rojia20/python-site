@@ -19,6 +19,7 @@ import numpy as np
 
 ## Data Source
 - create an array with the data point (3, 3) is NaN
+
 ```python
 # Create an array: 
 t1 = np.arange(24).reshape(4, 6)
@@ -32,6 +33,7 @@ t4[3, 3] = np.nan
 ### 1. 判断 array（数组）中 NaN 个数 
 - 利用 NaN 特性
 - 例： count numbers of NaN in t4
+
 ```python
 # 方法1:
 
@@ -47,6 +49,7 @@ np.count_nonzero(np.isnan(t4))
 
 ### 2. 判断当前数组中哪个数值为 NaN
 - 利用 NaN 特性
+
 ```python
 # 方法1:
 
@@ -77,6 +80,7 @@ np.sum(t4,axis = 0)
 
 #### Demo 2:
 - 指定求哪个方向的和 - using axis
+
 ```python
 # Create a new array:
 
@@ -111,6 +115,7 @@ np.sum(t5, axis = 1)
 
 ## 拓展: 判断 array（数组）中 非零数的个数 
 - Count numbers of nonzero in t4
+
 ```python
 t4[:,0] = 0
 

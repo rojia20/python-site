@@ -1,4 +1,4 @@
-# Numpy - Join and divide array
+# Numpy - Join and divide Array
 
 ## Import Modules
 ```python
@@ -15,12 +15,14 @@ import matplotlib.ticker as ticker
 
 ## Define Font for Chinese Charaters 
 - For macOS
+
 ```python
 my_font = font_manager.FontProperties(size = 12, fname = "/System/Library/Fonts/Hiragino Sans GB.ttc")
 ```
 
 ## Data Source
 - Create two arrays with same shape
+
 ```python
 t1 = np.arange(12).reshape(2, 6)
 
@@ -102,6 +104,7 @@ np.dsplit()
 #### Part 1: combine us and uk data and indicate the source of data: us or uk
 - Add an additional column to each array (us and uk) to indicate the source of data: us or uk
 - us == 0, uk == 1
+
 ```python
 # Step 1: creat a column with all zeros (for US), and create a column with all ones (for UK)
 

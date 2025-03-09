@@ -1,4 +1,4 @@
-# Scatter Plot
+# Matplotlib - Scatter Plot
 
 ## Import Modules
 ```python
@@ -10,12 +10,14 @@ from matplotlib import font_manager
 
 ## Define Font for Chinese Charaters 
 - For macOS
+
 ```python
 my_font = font_manager.FontProperties(size = 12, fname = "/System/Library/Fonts/Hiragino Sans GB.ttc")
 ```
 ## Case One
 ### Background
 - 北京2016年3和10月份每天白天的最高气温（分别位于如下列表）
+
 ```python
 x_3 = range(1, 32)
 
@@ -32,6 +34,7 @@ y_10 = [26,26,28,19,21,17,16,19,18,20,20,19,22,23,17,20,21,20,22,15,11,15,5,13,1
 
 ### Solution
 - Since we are looking for the correlation bettween temperature and time, we are going to use scatter plot
+
 ```python
 # Step 1: set the figure size 
 plt.figure(figsize = (20, 8), dpi = 80)

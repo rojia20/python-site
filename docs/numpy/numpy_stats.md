@@ -63,6 +63,7 @@ np.ptp(t4, axis = 0)
 
 ### 7. Standard Deviation
 - Describe the distribution/dispersion of sample mean
+
 ```python
 t4.std(axis = 0)
 ```

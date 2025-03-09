@@ -1,4 +1,4 @@
-# Line Chat 
+# Matplotlib - Line Chat 
 
 ## Import Modules
 ```python
@@ -9,7 +9,8 @@ from matplotlib import font_manager
 ```
 
 ## Define Font for Chinese Charaters 
-- For macOS
+- For macOS  
+
 ```python
 my_font = font_manager.FontProperties(size = 12, fname = "/System/Library/Fonts/Hiragino Sans GB.ttc")
 ```
@@ -68,6 +69,7 @@ y = [random.randint(20, 35) for i in range(120)]
 
 ### Solution
 - Since we are looking for trend and the data is numercial, we are going to use line chat
+
 ```python
 # Step 1: set the figure size 
 plt.figure(figsize = (20, 8), dpi = 80)
