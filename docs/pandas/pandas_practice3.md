@@ -76,7 +76,7 @@ plt.show()
 - 请统计不同年份书的平均评分情况
 
 ### Solution
-- Categorial data, so using bar chat
+- Curious about how rating change over the year --> use line chat
  
 ```python
 # Step 1: prepare data

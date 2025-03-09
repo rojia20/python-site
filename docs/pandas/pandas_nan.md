@@ -57,10 +57,11 @@ df2["w"] = df2["w"].fillna(df2["w"].mean()) # althernative way to write the abov
 # df2["w"].mean() --> unlike numpy, the mean of a column with NaN is not NaN. 
                   # --> Instead, it is the column mean of the sum of the rest of data point in the column 
 ```
-- 注释：`df2["w"][1] = np.nan`的alternative:     
-1. `df2["w"]["b"] = np.nan` --> 通用格式: [column][row]     
-2. `df2.loc["b", "w"] = np.nan`     
-3. `df2.iloc[1, 0] = np.nan`     
+
+- 注释：`df2["w"][1] = np.nan`的alternative:                  
+1. `df2["w"]["b"] = np.nan` --> 通用格式: [column][row]          
+2. `df2.loc["b", "w"] = np.nan`          
+3. `df2.iloc[1, 0] = np.nan`           
 
 ### 3. 一些特殊处理的Tips
 - 当不希望0参与到运算时，可将0变为NaN。例：`df2[df2 == 0] = np.nan`

@@ -54,7 +54,7 @@ np.ones((3, 4))
 ```
 
 ### 5. Create an array: shape of square and the diagonal are ones
-- the "top-left-to-bottom-right" diagonal are ones
+- The "top-left-to-bottom-right" diagonal are ones
 
 ```python
 np.eye(3) 
@@ -71,7 +71,7 @@ np.random.rand(1, 2)
 
 ### 7. Create an array: with random float numbers (negative or positive)
 - Random float numbers (negative or positive) are normally distributed 
-- standardized with mean = 0 and SD = 1
+- Standardized with mean = 0 and SD = 1
 - ```np.random.randn(size)```
 
 ```python

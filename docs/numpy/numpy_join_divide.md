@@ -122,6 +122,7 @@ uk_m = np.hstack((uk, uk_ones))
 
 us_uk = np.vstack((us_m, uk_m))
 ```
+
 - An alternative way to suppress scientific notation in arrays:    
 ```us_zeros = np.zeros((us.shape[0], 1)).astype(int)```     
 ```uk_ones = np.ones((uk.shape[0], 1)).astype(int)```

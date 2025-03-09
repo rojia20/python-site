@@ -42,7 +42,7 @@ s2 = pd.Series([1, 23, 2, 2, 1], index = list("abcde"))
 ```
 
 #### Practice
-- create a string of numbers (0~9), and use uppercase letter (default: starting from A) as index 
+- Create a string of numbers (0~9), and use uppercase letter (default: starting from A) as index 
 
 ```python
 a = {string.ascii_uppercase[i]: i for i in range(10)} 
@@ -50,6 +50,7 @@ s4 = pd.Series(a)
 
 print(s4) # outpt dtype = int
 ```
+
 - Reassign different index to the series 
 
 ```python
@@ -70,6 +71,7 @@ print(s5)
         # since the original series has index from A~J, hence index k~o are not correlated with any number, thus NaN
         # NaN 同理numpy中的nan
 ```
+
 - Change data type (same as numpy)
 
 ```python

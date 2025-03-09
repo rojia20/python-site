@@ -44,7 +44,8 @@ temp_list = df["Genre"].str.split(",").tolist() # output: [[],[],[]]
 
 genre_list = list(set(i for j in temp_list for i in j)) 
 ```
-- 生成器表达式：
+
+- 生成器表达式：                
 1. 遍历 temp_list 中的每一个子列表 j，然后再遍历子列表 j 中的每一个元素 i，最终生成一个包含所有 i 的迭代器。                    
 2. 将生成器表达式的结果转换为一个集合（set）。 集合的特性：会自动去重，因此结果中只包含唯一的元素               
 3. 将集合转换回列表，得到一个包含所有唯一元素的列表 genre_list          

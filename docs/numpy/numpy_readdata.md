@@ -161,9 +161,10 @@ us[1,1:4] = 0
 ```python
 t1[t1 <= 10] = 3
 ```
+
  - *原理:*  
-    - *t1 < 10 gives an output that has a dtype = bool （True or False*
-    - *t1[t1 <= 10] = 3 --> 将 t1 matrix 中 True 的位置统统替换为 3*
+    - *t1 < 10 gives an output that has a dtype = bool (True or False)*                  
+    - *t1[t1 <= 10] = 3 --> 将 t1 matrix 中 True 的位置统统替换为 3*      
 
 #### 4.2.2 Replace t1 < 10 with 0 and t1 > 10 with 10 
 - 一个临界点
@@ -171,6 +172,7 @@ t1[t1 <= 10] = 3
 ```python
 np.where(t1 < 10, 0, 10)
 ```
+
 - *解析: if t1 < 10, then t1 = 0, otherwise t1 = 10*
 
 #### 4.2.3 Replace t1 < 10 with 10 and t1 > 18 with 18 

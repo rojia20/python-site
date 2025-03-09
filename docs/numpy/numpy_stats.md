@@ -6,7 +6,7 @@ import numpy as np
 ```
 
 ## Statistical Functions
-- without asigning axis, opertaions will be on the entire array (all values in the array regardless its dimension)
+- Without asigning axis, opertaions will be on the entire array (all values in the array regardless its dimension)
 
 ### 1. Sum
 ```python

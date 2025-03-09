@@ -135,6 +135,7 @@ b.loc["one"].loc["j"]
 
 b.swaplevel().loc["h"]
 ```
+
 - DataFrame中需要用loc 或者 iloc来取标签从而取值
 - Series中可直接用标签名来取值 （例子如下）
 

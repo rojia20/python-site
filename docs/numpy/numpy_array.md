@@ -174,7 +174,7 @@ t15/0
 # numpy treat 0 as a very very small number, therefore 3/0 = "inf"
 ```
 #### 6.2 Array vs. Array (same shape)
-- calculation between arrays with exact same shape: 两个array中对应的数字进行运算
+- Calculation between arrays with exact same shape: 两个array中对应的数字进行运算
 
 ```python
 t19 = np.arange(100, 124).reshape(4, 6)
@@ -184,7 +184,7 @@ t20 = np.arange(0,24).reshape(4, 6)
 t19 + t20
 ```
 #### 6.3 Array vs. Array (partially different shape)
-- calculation between arrays with partially different shape: 大array与小array的shape相同部分，与小array对应数字进行运算
+- Calculation between arrays with partially different shape: 大array与小array的shape相同部分，与小array对应数字进行运算
 
 ```python
 # Example 1: 
@@ -211,7 +211,7 @@ print(t20 - t22)
 ```
 
 #### 6.4 Array vs. Array (completely different shape)
-- calculation between arrays with completely different shape: not capable 
+- Calculation between arrays with completely different shape: not capable 
 
 #### 6.5 More Examples
 1. Arrays (shapes) that are capable for calculation:

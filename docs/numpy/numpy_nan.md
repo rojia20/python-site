@@ -18,7 +18,7 @@ import numpy as np
 ```
 
 ## Data Source
-- create an array with the data point (3, 3) is NaN
+- Create an array with the data point (3, 3) is NaN
 
 ```python
 # Create an array: 
