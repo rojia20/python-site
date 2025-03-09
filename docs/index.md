@@ -1,6 +1,7 @@
 # WELCOME
 
-💻 This website serves as a record of my journey in mastering Python for data analysis.    
+💻 My Python Journey is a self-directed learning project, documenting my exploration of Python for data analysis. It serves as a comprehensive collection of study notes, practical exercises, and hands-on applications that showcase my progress in mastering Python programming.
+
 📚 If you are on the same boat, I hope you find the resources here helpful!
 
 #### Keep Calm & Keep Coding!       
