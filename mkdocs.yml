@@ -95,7 +95,7 @@ theme:
     # - content.action.edit
   language: en # 一些提示性的文字会变成英文
   font:
-    text: Zain
+    text: Outfit
   icon:
     # [添加 GitHub 仓库]
     # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#repository-icon
