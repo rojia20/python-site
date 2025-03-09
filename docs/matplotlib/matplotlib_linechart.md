@@ -185,7 +185,8 @@ plt.legend(loc = 0)
 plt.savefig("./matplotlib/bf_2.png")
 plt.show()
 ```
-- *when hoping to use Chinese charaters in legend --> plt.legend(prop = my_font)*
+
+- *When hoping to use Chinese charaters in legend --> `plt.legend(prop = my_font)`*
 
 ![alt text](mat/bf_2.png)
 
