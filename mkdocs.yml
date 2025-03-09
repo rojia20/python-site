@@ -36,6 +36,8 @@ nav:
     - Practice one: pandas/pandas_practice.md
     - Practice Two: pandas/pandas_practice2.md
     - Practice Three: pandas/pandas_practice3.md
+  - Reference: 
+    - Data Source: reference/data_source.md
    
 
   
@@ -92,6 +94,8 @@ theme:
     # # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#code-actions
     # - content.action.edit
   language: en # 一些提示性的文字会变成英文
+  font:
+    text: Zain
   icon:
     # [添加 GitHub 仓库]
     # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#repository-icon

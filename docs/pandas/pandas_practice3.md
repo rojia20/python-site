@@ -57,7 +57,7 @@ y = count_year.values
 plt.bar(range(len(x)), y, color = "#FFDAB9")
 
 # 3. set the xticks 
-plt.xticks(range(len(x)), x)
+plt.xticks(range(len(x)), x.astype(int))
 
 # 4. add descriptions 
 plt.xlabel("Year")

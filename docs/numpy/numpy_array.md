@@ -213,7 +213,8 @@ print(t20 - t22)
 #### 6.4 Array vs. Array (completely different shape)
 - calculation between arrays with completely different shape: not capable 
 
-## Examples: arrays (shapes) that are capable for calculation 
+#### 6.5 More Examples
+1. Arrays (shapes) that are capable for calculation:
 - (3, 3, 2) vs (1, 2)
 - (3, 3, 2) vs (1, 3)
 - (3, 3, 2) vs (3, 1)
@@ -221,6 +222,6 @@ print(t20 - t22)
 - (3, 3, 2) vs (3, 3)
 
 
-## Example: arrays (shapes) that are not capable for calculation 
+2. Arrays (shapes) that are not capable for calculation: 
 - (3, 3, 3) vs (3, 2)
 

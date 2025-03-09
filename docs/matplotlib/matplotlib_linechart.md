@@ -100,6 +100,7 @@ plt.show()
 ## Case Two
 ### Background 
 - 假设某人11岁到30岁的交往记录如下:
+
 ```python
 x = range(11, 31)
 ```
