@@ -58,7 +58,7 @@ pd.data_range(start = None, end = None, periods = None, freq = "D")
 `pd.date_range(start = "20171230", end = "20180131", freq = "10D")`             
 `pd.date_range(start = "20171230", end = "20180131", periods = 10, freq = "10D")`           
 
-- 当数据中没有完整的时间序列（例如：原始数据里的事时间字符串）--> 用`pd.to_datetime()`来转换            
+当数据中没有完整的时间序列（例如：原始数据里的事时间字符串）--> 用`pd.to_datetime()`来转换            
   
 ```python
 df["timeStamp"] = pd.to_datetime(df["timeStamp"], format = "")
